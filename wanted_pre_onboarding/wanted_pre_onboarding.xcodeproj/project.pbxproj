@@ -22,7 +22,6 @@
 		5164E085288B9C9000E965BF /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164E084288B9C9000E965BF /* Extension+UIImageView.swift */; };
 		5164E087288C28CD00E965BF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164E086288C28CD00E965BF /* DetailView.swift */; };
 		5164E089288C29AD00E965BF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5164E088288C29AD00E965BF /* DetailViewController.swift */; };
-		5164E08B288D3F7F00E965BF /* ApiKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5164E08A288D3F7F00E965BF /* ApiKey.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		5164E084288B9C9000E965BF /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
 		5164E086288C28CD00E965BF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		5164E088288C29AD00E965BF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		5164E08A288D3F7F00E965BF /* ApiKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKey.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 				51601976288B4D62006A9523 /* Assets.xcassets */,
 				51601978288B4D62006A9523 /* LaunchScreen.storyboard */,
 				5160197B288B4D62006A9523 /* Info.plist */,
-				5164E08A288D3F7F00E965BF /* ApiKey.plist */,
 			);
 			path = wanted_pre_onboarding;
 			sourceTree = "<group>";
@@ -227,7 +224,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5164E08B288D3F7F00E965BF /* ApiKey.plist in Resources */,
 				5160197A288B4D62006A9523 /* LaunchScreen.storyboard in Resources */,
 				51601977288B4D62006A9523 /* Assets.xcassets in Resources */,
 			);
