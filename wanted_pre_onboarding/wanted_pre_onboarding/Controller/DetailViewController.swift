@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import UIKit
+
+class DetailViewController: UIViewController {
+    var weatherItem: GroupWeatherItem!
+    
+    override func viewDidLoad() {
+        let detailView = DetailView(frame: self.view.frame, weatherItem: weatherItem)
+        self.view.addSubview(detailView)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.tintColor = .white
+    }
+}
