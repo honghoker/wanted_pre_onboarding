@@ -68,14 +68,14 @@ struct Main: Codable {
     let humidity: Int
 
     enum CodingKeys: String, CodingKey {
-        case temp
-        case feelsLike = "feels_like"
-        case tempMin = "temp_min"
-        case tempMax = "temp_max"
-        case pressure
+        case temp // 현재기온
+        case feelsLike = "feels_like" // 체감기온
+        case tempMin = "temp_min" // 최저기온
+        case tempMax = "temp_max" // 최고기온
+        case pressure // 기압
         case seaLevel = "sea_level"
         case grndLevel = "grnd_level"
-        case humidity
+        case humidity // 습도
     }
 }
 
@@ -92,13 +92,13 @@ struct Weather: Codable {
 
     enum CodingKeys: String, CodingKey {
         case id, main
-        case weatherDescription = "description"
-        case icon
+        case weatherDescription = "description" // 날씨설명
+        case icon // 아이콘
     }
 }
 
 // MARK: - Wind
 struct Wind: Codable {
-    let speed: Double
+    let speed: Double // 풍속
     let deg: Int
 }
