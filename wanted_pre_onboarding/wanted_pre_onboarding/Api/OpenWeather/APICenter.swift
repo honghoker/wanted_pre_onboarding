@@ -8,13 +8,10 @@
 import Foundation
 
 // MARK: - API KEY
-//let weatherAPIKey = "/API Key/"
-let weatherAPIKey = "4719319bb4799bff381b0bffc1ad8a91"
-
-//let myCitys: String = "1842616,1841811,1842225,1842025,1835327,1835224,1841066,1838524,1835895,1835848,1836553,1835553,1835648,1833747,1843491,1845457,1846266,1845759,1845604,1845136"
+let weatherAPIKey = "/API Key/"
 
 // MARK: - 요청할 도시 Map
-let myCitysMap: [String: String] = [
+let myCitiesMap: [String: String] = [
      "1842616": "공주",
      "1841811": "광주(전라남도)",
      "1842225": "구미",
@@ -82,7 +79,6 @@ struct APICenter {
             completion(.failure(.invalidURL))
             return
         }
-        print(requestURL)
         let task = session.dataTask(with: requestURL) { (data, response, error) in
             guard let httpResponse = response as? HTTPURLResponse else {
                 completion(.failure(.requestFailed))
