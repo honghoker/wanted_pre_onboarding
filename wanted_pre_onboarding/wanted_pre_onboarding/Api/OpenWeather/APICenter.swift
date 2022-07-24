@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - API KEY
-let weatherAPIKey = "/API Key/"
+let weatherAPIKey = "\(Bundle.main.OpenWeather_API_KEY)"
 
 // MARK: - 요청할 도시 Map
 let myCitiesMap: [String: String] = [
