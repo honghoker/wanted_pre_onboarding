@@ -1,5 +1,6 @@
-# wanted_pre_onboarding
+# 원티드 프리온보딩 코스 사전과제 - 날씨 정보 APP
 #### 원티드 프리온보딩 코스에 참여하지는 않았지만, Storyboard 없이 오로지 Code로만 만들어보고 싶어 경험 삼아 진행하였다.
+<br>
 
 ![사전과제](https://user-images.githubusercontent.com/50417461/180692946-615771c7-fe37-4ac2-8ac7-cb74285c6cf3.png)
 
@@ -10,8 +11,8 @@
 ## 개발내용
 - 찾아본 대부분의 예제가 도시 하나당 한번의 API 호출을 했는데, **n개의 도시의 날씨 정보를 얻으려고 n번의 호출**을 해야하는 방식이 마음에 들지않았다.
 문서를 찾아보니 basePath를 기존에 사용하던 **weather 대신 group**을 사용하면 도시의 id들을 parameter로 보내 **한번에 호출**할 수 있는걸 알아냈다.
-  - https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} **(기존 호출 방식)**   
-  -> https://api.openweathermap.org/data/2.5/group?id={city id,city id,city id,city id}&appid={API key} **(변경 후 호출 방식)**
+  - ```https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}``` **(기존)**   
+  -> ```https://api.openweathermap.org/data/2.5/group?id={city id,city id,city id,city id}&appid={API key}``` **(변경 후)**
 
 <br>
 
